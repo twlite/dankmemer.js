@@ -6,6 +6,9 @@ An API wrapper for Dank Memer API.
 # Installing
 `npm i --save dankmemer.js`
 
+# Updates
+- Fixed some bugs
+
 # Usage
 ```js
 const DankMemer = require("dankmemer.js");
@@ -137,6 +140,7 @@ memer.spank(avatar1, avatar2).then(img => {
 - thesearch
 - trash
 - tiger
+- trigger
 - tweet
 - ugly
 - unpopular
