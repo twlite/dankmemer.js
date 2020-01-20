@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.on("ready", () => {
-    console.log(`Memer is online!`);
+    console.log("Memer is online!"); // eslint-disable-line no-console
 });
 
 client.on("message", async(message) => {
@@ -13,10 +13,9 @@ client.on("message", async(message) => {
         let userone = message.author.displayAvatarURL;
         let usertwo = client.user.displayAvatarURL;
         let image = await memer.spank(userone, usertwo);
-
-        const attachment = new Discord.Attachment(image, "spank.png")
+        const attachment = new Discord.Attachment(image, "spank.png");
         return message.channel.send(attachment);
     }
-})
+});
 
 client.login("Discord Bot Token");
