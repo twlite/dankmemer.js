@@ -1,6 +1,6 @@
 {
     "name": "dankmemer.js",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "description": "An API wrapper for Dank Memer API.",
     "main": "index.js",
     "scripts": {
@@ -29,6 +29,11 @@
         "discord.js-meme",
         "meme-api",
         "dank-memer-meme-server",
-        "dank-memer-meme"
-    ]
+        "dank-memer-meme",
+        "dank-memer",
+        "dank-memer-memes"
+    ],
+    "devDependencies": {
+        "eslint": "^6.8.0"
+    }
 }
