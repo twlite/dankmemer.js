@@ -18,7 +18,7 @@ const memer = new DankMemer("Your API Token Goes Here");
 # Example
 ```js
 const DankMemer = require("dankmemer.js");
-const memer = new Dank("Dank Memer Api Key");
+const memer = new DankMemer("Dank Memer Api Key");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
@@ -57,6 +57,8 @@ memer.spank(avatar1, avatar2).then(img => {
     message.channel.send({ file: img });
 })
 ```
+# Getting API Key
+Go to [dankmemer.services/dashboard](https://dankmemer.services/dashboard) and request for API key.
 
 # Functions
 - abandon
@@ -154,6 +156,23 @@ memer.spank(avatar1, avatar2).then(img => {
 - whothisis
 - yomomma
 - youtube
+
+# RateLimits [ Source: Dank Memer API ]
+Rate Limits
+Each endpoint has it's own ratelimit, which you can find in it's documentation. Additionally, the API has a global ratelimit of 300 requests per minute.
+
+The ratelimits for the endpoint are defined with X-RateLimit-:key, while the global ratelimit is defined with X-Global-RateLimit-:key.
+When the global ratelimit is hit, the body will contain an additional JSON key "global" which will be set to true.
+
+# Ratelimit Headers:
+- X-RateLimit-Limit: Maximum usage allowed per timeframe
+- X-Ratelimit-Remaining: Remaining requests that can be made during the timeframe
+- X-RateLimit-Reset: Timestamp indicating when the ratelimit will reset in milliseconds.
+- Retry-After: Time to wait in milliseconds until another request can be made. Only exposed if ratelimit is reached.
+- X-Global-RateLimit-Limit: Maximum global usage allowed per timeframe
+- X-Global-Ratelimit-Remaining: Remaining requests that can be made globally during the timeframe
+- X-Global-RateLimit-Reset: Timestamp indicating when the global ratelimit will resett in milliseconds.
+- Retry-After: Time to wait in milliseconds until another request can be made. Only exposed if ratelimit is reached.
 
 # API Docs
 **[Click Here](https://dankmemer.services/documentation)**
