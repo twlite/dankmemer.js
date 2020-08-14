@@ -1,24 +1,24 @@
 {
-    "name": "dankmemer.js",
-    "version": "0.0.4",
+    "name": "dankmemer",
+    "version": "1.0.0",
     "description": "An API wrapper for Dank Memer API.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "INEX07",
+    "author": "Snowflake107",
     "license": "MIT",
     "dependencies": {
         "snekfetch": "^4.0.4"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/INEX07/dankmemer.js.git"
+        "url": "git+https://github.com/Snowflake107/dankmemer.js.git"
     },
     "bugs": {
-        "url": "https://github.com/INEX07/dankmemer.js/issues"
+        "url": "https://github.com/Snowflake107/dankmemer.js/issues"
     },
-    "homepage": "https://github.com/INEX07/dankmemer.js#readme",
+    "homepage": "https://github.com/Snowflake107/dankmemer.js#readme",
     "keywords": [
         "dankmemer",
         "dankmemer-api",
