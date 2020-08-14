@@ -1,7 +1,7 @@
 # DankMemer.js
 An API wrapper for Dank Memer API.
 
-[![NPM](https://nodei.co/npm/dankmemer.js.png)](https://nodei.co/npm/dankmemer.js/)
+[![NPM](https://nodei.co/npm/dankmemer.png)](https://nodei.co/npm/dankmemer/)
 
 # Installing
 `npm i --save dankmemer.js`
@@ -11,13 +11,13 @@ An API wrapper for Dank Memer API.
 
 # Usage
 ```js
-const DankMemer = require("dankmemer.js");
+const DankMemer = require("dankmemer");
 const memer = new DankMemer("Your API Token Goes Here");
 ```
 
 # Example
 ```js
-const DankMemer = require("dankmemer.js");
+const DankMemer = require("dankmemer");
 const memer = new DankMemer("Dank Memer Api Key");
 const Discord = require("discord.js");
 const client = new Discord.Client();
