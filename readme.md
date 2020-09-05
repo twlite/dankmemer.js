@@ -4,7 +4,7 @@ An API wrapper for Dank Memer API.
 [![NPM](https://nodei.co/npm/dankmemer.png)](https://nodei.co/npm/dankmemer/)
 
 # Installing
-`npm i --save dankmemer.js`
+`npm i --save dankmemer`
 
 # Updates
 - Fixed some bugs
